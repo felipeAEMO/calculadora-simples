@@ -1,0 +1,50 @@
+{
+  "timestamp": "2025-06-18_09-21-12",
+  "system": {
+    "node": "v18.19.1",
+    "npm": "9.2.0",
+    "python": "3.12.3 (main, May 26 2025, 18:50:19) [GCC 13.3.0]"
+  },
+  "results": [
+    {
+      "name": "Testes Unit\u00e1rios",
+      "status": "failed",
+      "output": "\n> calculadora-simples@0.1.0 test\n> jest\n\n",
+      "error": "\u25cf Validation Error:\n\n  Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.\n\n  Configuration Documentation:\n  https://jestjs.io/docs/configuration\n\n\nAs of Jest 28 \"jest-environment-jsdom\" is no longer shipped by default, make sure to install it separately.\n",
+      "duration": 6.709043025970459
+    },
+    {
+      "name": "Linter (ESLint)",
+      "status": "success",
+      "output": "\n> calculadora-simples@0.1.0 lint\n> next lint\n\n\u2714 No ESLint warnings or errors\n",
+      "error": "",
+      "duration": 41.12379574775696
+    },
+    {
+      "name": "Build Verification",
+      "status": "success",
+      "output": "\n> calculadora-simples@0.1.0 build\n> next build\n\n   \u25b2 Next.js 15.3.3\n\n   Linting and checking validity of types ...\n   Creating an optimized production build ...\n \u2713 Compiled successfully in 7.0s\n   Collecting page data ...\n   Generating static pages (0/3) ...\n \u2713 Generating static pages (3/3)\n   Finalizing page optimization ...\n   Collecting build traces ...\n\nRoute (pages)                                Size  First Load JS\n\u250c \u25cb / (2148 ms)                           12.2 kB         105 kB\n\u2514 \u25cb /404                                    190 B        92.7 kB\n+ First Load JS shared by all             92.5 kB\n  \u251c chunks/framework-2f335d22a7318891.js  57.7 kB\n  \u251c chunks/main-8232a80eb0641080.js       33.8 kB\n  \u2514 other shared chunks (total)             986 B\n\n\u25cb  (Static)  prerendered as static content\n\n",
+      "error": "",
+      "duration": 160.99858331680298
+    },
+    {
+      "name": "Type Checking (se TS)",
+      "status": "failed",
+      "output": "",
+      "error": "npm ERR! Missing script: \"type-check\"\nnpm ERR! \nnpm ERR! To see a list of scripts, run:\nnpm ERR!   npm run\n\nnpm ERR! A complete log of this run can be found in:\nnpm ERR!     /root/.npm/_logs/2025-06-18T12_21_03_005Z-debug-0.log\n",
+      "duration": 0.8153293132781982
+    },
+    {
+      "name": "Testes de Integra\u00e7\u00e3o",
+      "status": "failed",
+      "output": "\n> calculadora-simples@0.1.0 test\n> jest --coverage\n\n",
+      "error": "\u25cf Validation Error:\n\n  Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.\n\n  Configuration Documentation:\n  https://jestjs.io/docs/configuration\n\n\nAs of Jest 28 \"jest-environment-jsdom\" is no longer shipped by default, make sure to install it separately.\n",
+      "duration": 3.9649784564971924
+    },
+    {
+      "name": "Dev Server Check",
+      "status": "success",
+      "duration": 5.0008368492126465
+    }
+  ]
+}
